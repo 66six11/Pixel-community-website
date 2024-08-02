@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <title>方块像素社区</title>
+
+</head>
+<style>
+    @font-face {
+        font-family: 'pixelfont';
+        src: url('BoutiqueBitmap9x9_1.5.ttf') format('truetype');
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #e7e9ec;
+        font-family: "pixelfont", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    header {
+        display: flex;
+        width: 100%;
+        height: 8%;
+        background-color: #fff;
+        position: fixed;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+
+    .bar {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 0 13%;
+    }
+
+    .logo {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: 0;
+
+    }
+
+    .logo img {
+        height: 100%;
+
+
+    }
+    .logo text {
+        font-size: 20px;
+        letter-spacing: 3px; /* 字符间距增加2像素 */
+        margin-left: 20px;
+    }
+
+    .nav {
+        position: absolute; /* 绝对定位 */
+        left: 50%;
+        transform: translateX(-50%); /* 移动到页面中心 */
+        margin:auto;
+        display: flex; /* 使用Flexbox布局 */
+        justify-content: center; /* 链接居中排列  */
+        list-style-type: none; /* 移除列表项的默认项目符号 */
+        padding: 0; /* 移除默认内边距 */
+    }
+
+    .nav ul {
+
+        display: flex; /* 使用Flexbox布局 */
+        justify-content: center; /* 链接居中排列  */
+        list-style-type: none; /* 移除列表项的默认项目符号 */
+        margin: 0; /* 移除默认外边距 */
+        padding: 0; /* 移除默认内边距 */
+    }
+
+    .nav a {
+        text-decoration: none; /* 移除链接的下划线 */
+        color: rgba(0, 0, 0, 0.5); /* 链接的颜色 */
+        padding: 10px 40px; /* 设置内边距，增加点击区域 */
+        display: block; /* 使链接填充整个列表项 */
+        font-size: 21px; /* 设置字体大小 */
+    }
+
+
+</style>
+<body>
+<header>
+    <div class="bar">
+        <div class="logo">
+            <img src="logo.png" alt="logo">
+            <text>方块像素画社区</text>
+        </div>
+
+
+
+    <nav class="nav">
+        <ul>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">软件渠道</a></li>
+            <li><a href="#">教程指南</a></li>
+            <li><a href="#">像素百科</a></li>
+            <li><a href="#">关于</a></li>
+        </ul>
+    </nav>
+    </div>
+</header>
+
+</body>
+</html>
